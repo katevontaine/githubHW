@@ -23,9 +23,9 @@ document.querySelector('.following').innerHTML += following;
 //repository
 
 var reposName = _.pluck(repos, 'name');
-// return reposName;
+
 var lastUpdate = _.pluck(repos, 'updated_at');
-// return lastUpdate;
+
 
 var reposEntry = "";
 _.forEach(repos, function (item, idx, arr){
@@ -37,10 +37,23 @@ _.forEach(repos, function (item, idx, arr){
   + "<p>"
   + lastUpdate[idx]
   + "</p>"
+  +"<hr>"
 });
 console.log(reposEntry);
 $('.reposData').html(reposEntry);
 
+// moment().startOf('hour').fromNow();
+////////////////////////////////////////////////////////////////////////////////
+//FOR MIDDLE SECTION PUBLIC ACTIVITY TAB
+var actTime = _.pluck(events, 'created_at');
+console.log(actTime);
+
+
+// var Char = events.actor
+// var CharName == _.pluck(events, 'login');
+// console.log(CharName);
+// var userName = _.pluck(events, 'actor.login');
+// console.log(userName);
 
 
 
