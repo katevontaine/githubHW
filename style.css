@@ -11,6 +11,9 @@ div .middlesection {
   width: 80%;
   background-color: blue; }
 
+nav ul li {
+  display: inline-block; }
+
 #leftbar {
   width: 25%;
   background-color: yellow;
@@ -23,5 +26,13 @@ div .middlesection {
 #rightsection {
   width: 60%;
   background-color: green;
+  display: inline-block;
+  vertical-align: top; }
+
+nav ul li a {
+  display: inline-block;
+  text-decoration: none; }
+
+.inRepos ul li {
   display: inline-block;
   vertical-align: top; }

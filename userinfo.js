@@ -1,4 +1,4 @@
-var user{
+var user = {
   "login": "katevontaine",
   "id": 14809697,
   "avatar_url": "https://avatars.githubusercontent.com/u/14809697?v=3",
@@ -31,7 +31,7 @@ var user{
   "updated_at": "2015-10-07T20:52:26Z"
 }
 
-var repos[
+var repos = [
   {
     "id": 44627863,
     "name": "bowerHW",
@@ -731,7 +731,7 @@ var repos[
 ]
 
 
-var events[
+var events = [
   {
     "id": "3260643811",
     "type": "PushEvent",

@@ -17,7 +17,9 @@ footer, header{
 
 div .middlesection {
   width: 80%;
-  background-color: blue;
+  background-color: blue;}
+  nav ul li{
+      display: inline-block;
 }
 #leftbar {
     width:25%;
@@ -36,3 +38,13 @@ div .middlesection {
       display: inline-block;
       vertical-align: top;
                 }
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.inRepos ul li{
+  display: inline-block;
+vertical-align: top;
+
+}

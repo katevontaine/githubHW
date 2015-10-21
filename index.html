@@ -29,14 +29,18 @@
 
         <div id="leftbar">
           <img src="https://avatars0.githubusercontent.com/u/14809697?v=3&s=460">
-            <p>my name</p>
+            <br>
+            <div class="name"></div>
+            <br>
+            <div class="login"></div>
+
             <hr>
             <img src="">
-            <p>clock img + date</p>
+            <div class = "date"><p>Joined on Sep 23, 2015</p></div>
             <hr>
-            <p>1  2  0</p>
+            <div class = "followers"><h5>Followers</h5></div><div class = "starred"></div><h5>Starred</h5><div class = "following"><h5>Following</h5></div>
             <hr>
-            <p>orgs info</p>
+            <div class = "orgs"><h4>Organizations</h4></div>
         </div>
 
         <div id="rightsection">
@@ -46,17 +50,27 @@
                     <li><a href="">Contributions</a></li>
                     <li><a href="">Repositories</a></li>
                     <li><a href="">Public Activity</a></li>
-
+                                <br>
                                 <div class="repos">
-                                  <nav>
+                                  <nav class="inRepos">
                                       <ul>
                                             <li><input value"" placeholder="Find a Repository..."></li>
-                                            <button type="submit" name="Search">
-                                            <li><a href="">Pull Requests</a></li>
-                                            <li><a href="">Issues</a></li>
-                                            <li><a href="">Gist</a></li>
+                                            <button type="submit" name="Search"></button>
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Public</a></li>
+                                            <li><a href="">Private</a></li>
+                                            <li><a href="">Sources</a></li>
+                                            <li><a href="">Forks</a></li>
+                                            <li><a href="">Mirror</a></li>
+                                            <button type="button" name=" N E W "></button>
                                       </ul>
                                 </nav>
+                                        <div class="reposData">
+                                                    <div class="reposEntry">
+                                                            <div class="repository"></div>
+                                                            <hr>
+                                                    </div>
+                                        </div>  
                                 </div>
 
 
@@ -97,7 +111,9 @@
     </footer>
 
     <script src="bower_components/jquery/dist/jquery.js">  </script>
+    <script src="bower_components/moment/moment.js"></script>
     <script src="bower_components/underscore/underscore.js"> </script>
+    <script src="userinfo.js"></script>
     <script src="main.js"></script>
 
   </body>
