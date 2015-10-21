@@ -8,6 +8,8 @@ body footer, body header {
       display: inline-block; }
 
 div .middlesection {
+  margin: 0auto;
+  padding: 0;
   width: 80%;
   background-color: blue; }
 
