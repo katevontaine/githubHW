@@ -1,0 +1,27 @@
+body footer, body header {
+  width: 100%;
+  background-color: grey; }
+  body footer nav ul, body header nav ul {
+    display: inline-block; }
+    body footer nav ul li, body header nav ul li {
+      text-decoration: none;
+      display: inline-block; }
+
+div .middlesection {
+  width: 80%;
+  background-color: blue; }
+
+#leftbar {
+  width: 25%;
+  background-color: yellow;
+  display: inline-block;
+  vertical-align: top; }
+  #leftbar img {
+    width: 100%;
+    border-radius: 10px; }
+
+#rightsection {
+  width: 60%;
+  background-color: green;
+  display: inline-block;
+  vertical-align: top; }
