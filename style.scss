@@ -1,3 +1,5 @@
+@import "octicons.css";
+
 body{
   padding: 0;
   margin: 0;
@@ -6,6 +8,13 @@ footer, header{
     width:100%;
     background-color: #E0E0E0;
     border-bottom: 3px solid grey;
+nav{
+  .octicon-bell:before
+  { content: '\f0de'} /*  */
+}
+  }
+}
+
     nav ul {
         display: inline-block;
             li{
@@ -27,7 +36,6 @@ footer, header{
           }
 
 
-}
 .middlecontent{
   padding-left: 100px;
   padding-top: 15px;
@@ -49,6 +57,18 @@ div .middlesection {
     // background-color: yellow;
     display: inline-block;
     vertical-align: top;
+    .octicon-clock:before
+    { content: '\f046'} /*  */
+}
+    .name{
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .login{
+      padding: 0;
+      margin: 0;
+      font-size: 16px;
+    }
     img{
       width: 100%;
       border-radius: 10px;
