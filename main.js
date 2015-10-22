@@ -54,24 +54,58 @@ var actType = _.pluck(events, 'type');
 console.log(actType);
 $('.actType').html(actType);
 // if(actType === "PushEvent") return "pushed to";
-document.querySelector('.pushType').innerHTML += "pushed to";
+// document.querySelector('.pushType').innerHTML += "pushed to";
 
+var actName = _.pluck(events, 'login');
+console.log(actName);
+$('.actType').html(actName);
+
+var actUrl = _.pluck(events, "repo.url");
+console.log(actUrl);
+$('.actType').html(actUrl);
+//
+// var  actName = events.filter(function(el){
+//   return _.contains(el.evets, "login")
+// });
 var reposObj = "";
 _.forEach(events, function (item, idx, arr){
   console.log(item);
-  reposObj += "<article class='actTime'>" + item.actor.login + '</article>'
-  reposObj += "<article class='actType'>" + item.actor.url + '</article>'
+  reposObj += "<article class='actName'>" + item.actor.login + '</article>'
+  reposObj += "<article class='actUrl'>" + item.repo.url + '</article>'
+  reposObj += "<article class='actAvatar'>" + item.actor.avatar_url + '</article>'
+});
+
+  var publicAct = "";
+  _.forEach(events, function (item, idx, arr){
+    publicAct += "<article class='publicAct'>"
+    + "<h2>"
+    + actTime[idx]
+    + "'>'"
+    +"</h2>"
+    + "<p>"
+    + actType[idx]
+    + "</p>"
+    + "<p>"
+    + actTime[idx]
+    + "</p>"
+    + "<p>"
+    + actName[idx]
+    + "</p>"
+    + "<p>"
+    + actUrl[idx]
+    + "</p>"
+    + "<p>"
+    + actAvatar[idx]
+    + "</p>"
+    +"<hr>"
+  });
+  console.log(publicAct);
+  $('.publicactivity').html(publicAct);
+
+  // reposObj += "<article class='actMessage'>" + item.payload.commits.author.message + '</article>'
   // reposObj += "<article class='entry'>"
-});
+
 document.querySelector(".publicactivity").innerHTML += reposObj;
-
-
-
-
-
-var  actName = events.filter(function(el){
-  return _.contains(el.evets, "login")
-});
 
 
 // var actorR == _.pluck(events, 'actor');
