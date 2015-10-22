@@ -98,11 +98,14 @@ _.forEach(events, function (item, idx, arr){
     + actAvatar[idx]
     + "</p>"
     +"<hr>"
+    // += "<article class='actMessage'>"
+    // + item.payload.commits[0].message
+    // + '</article>'
   });
   console.log(publicAct);
   $('.publicactivity').html(publicAct);
 
-  // reposObj += "<article class='actMessage'>" + item.payload.commits.author.message + '</article>'
+  // reposObj += "<article class='actMessage'>" + item.payload.commits[0].message + '</article>'
   // reposObj += "<article class='entry'>"
 
 document.querySelector(".publicactivity").innerHTML += reposObj;
